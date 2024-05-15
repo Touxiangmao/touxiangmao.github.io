@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="爱学习 ">
+<meta name="theme-color" content="#868e96">
+<title>li zi cheng 🍊loves learning</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1715753152890">
+<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+  <meta name="description" content="爱学习 ">
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>li zi cheng 🍊loves learning</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">李子橙🍊爱学习</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/archives" target="_self">
+                  <i class="fa fa-globe"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">李子橙🍊</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">好奇 探索 学习</p>
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+  
+  
+
+
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box box-shadow-wrapper">
+          <section class="section archives-section bg-color posts-expand">
+            
+
+<div class="bg-color">
+  <div class="archive-timeline-box">
+    <div class="archive-timeline-title">
+      
+        <h2 class="language" data-lan="archives" data-count="1">非常好！目前共计1篇文章，继续努力！</h2>
+      
+    </div>
+    
+      
+      
+        <div class="node-title">
+          <h2 class="tag-year">2024</h2>
+        </div>    
+        
+      
+      <a href="https://touxiangmao.github.io/post/ce-shi/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              05-10
+              <small>谈谈戒色</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+  </div>
+  
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/archives/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+</div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('2024/5/10');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+    
+        <div class="pisces back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+          
+            
+              <div class="bg-img">
+                <img src="E:\Users\Administrator\Downloads\geometry2.png" />
+              </div>
+              
+                
+                  
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "false";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://touxiangmao.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;本网站旨在分享本人一些学习过程记录&lt;br&gt;
+主要原因是本人年岁已高(快30了😭)各种环境部署和代码经常忘得一干二净&lt;br&gt;
+此外会记录一些自己的心得体会&lt;br&gt;
+希望对自己和对不小心迷路到这里的你有帮助&lt;/p&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;p&gt;当然是李子橙了 , 不然网站名叫什么李子橙爱学习&lt;br&gt;
+问为什么叫李子橙? 问就是真名谐音&lt;br&gt;
+不要再往下问了 不然痛失网名了&lt;/p&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;p&gt;打游戏啊打游戏&lt;/p&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+&lt;p&gt;等我想好这里写啥再写吧&lt;/p&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://touxiangmao.github.io/post/ce-shi/"" data-c="
+          &lt;h2 id=&#34;起因&#34;&gt;🚩起因&lt;/h2&gt;
+&lt;p&gt;思考了很久关于第一篇文章到底写点儿什么，昨天又在微信群看见正在热烈讨论戒色这件事，回想一下，不久之前我也还在饱受此事困扰。我想对于戒色，我发言权还挺大，今天就来唠一唠，我与戒色的故事。&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;如果你的身体出现严重的健康问题，请及时就医，本文所讨论问题将不适合于你，本文讨论问题皆在正常范围内所受奖励等问题困绕的解决方法。&lt;/p&gt;
+&lt;h2 id=&#34;回顾&#34;&gt;📆回顾&lt;/h2&gt;
+&lt;p&gt;如果回顾下从前，似乎对于戒色这件事已经久远得模糊不清，最早似乎可以追溯到高中时期，以至于是高一还是高二也记不太清了。&lt;/p&gt;
+&lt;p&gt;如果论与“色魔”缠斗，即使从高二算起也已十好几年，从最早的戒色吧、到国外的戒色视频、到最近的戒色论坛，我可谓知识储备丰富。&lt;br&gt;
+如果论方法，能记起的包括但不限于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;记笔记&lt;/li&gt;
+&lt;li&gt;看戒色文章（例：贴吧精品贴，其他戒色论坛网站文章）&lt;/li&gt;
+&lt;li&gt;看戒色书籍（例：《戒为良药》《走向光明》）&lt;/li&gt;
+&lt;li&gt;念咒语&lt;/li&gt;
+&lt;li&gt;念圣号&lt;/li&gt;
+&lt;li&gt;做好事&lt;/li&gt;
+&lt;li&gt;看佛经&lt;/li&gt;
+&lt;li&gt;锻炼发泄&lt;/li&gt;
+&lt;li&gt;用其他东西转移注意&lt;/li&gt;
+&lt;li&gt;戒色色七部曲&lt;/li&gt;
+&lt;li&gt;…….&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在此不过对赘述，光记一半记不下去的笔记本就有5、6本。&lt;/p&gt;
+&lt;p&gt;一直到去年年底我才看完50余万字的走向光明，搞笑的是那时距离我结婚也有三年之久。&lt;/p&gt;
+&lt;h2 id=&#34;误区&#34;&gt;🤡误区&lt;/h2&gt;
+&lt;p&gt;多年以来饱受此事困扰，我看过无数相关文章和视频，也付出过无数种各种各样的行动。但对于戒色这一件事一直想不明白，甚至在我看来这成了我的重大问题。&lt;/p&gt;
+&lt;p&gt;奖励行为、小电影、颜色漫画、颜色小说让我沉沦又厌恶，我身上的各种不舒服都是拜色所赐：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;头皮屑&lt;/li&gt;
+&lt;li&gt;口干舌燥&lt;/li&gt;
+&lt;li&gt;头昏眼花&lt;/li&gt;
+&lt;li&gt;鼻炎&lt;/li&gt;
+&lt;li&gt;精力不充沛&lt;/li&gt;
+&lt;li&gt;可能肾不好&lt;/li&gt;
+&lt;li&gt;身体特差&lt;/li&gt;
+&lt;li&gt;尿尿多&lt;/li&gt;
+&lt;li&gt;小蝌蚪质量可能不好&lt;/li&gt;
+&lt;li&gt;性格变内向&lt;/li&gt;
+&lt;li&gt;懒惰&lt;/li&gt;
+&lt;li&gt;不自律&lt;/li&gt;
+&lt;li&gt;…….等等等等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我身体和性格以及现状的不满似乎都是“色”✋造成的。&lt;/p&gt;
+&lt;p&gt;而且就只是戒色而已，这件事我都办不好，我可能就是个废物了！&lt;/p&gt;
+&lt;p&gt;有“色”的人生是可耻的，戒色才能让生活清新，才能拥抱光明，如果不戒色，我就是失败的，就是肮脏的。&lt;/p&gt;
+&lt;h2 id=&#34;觉醒&#34;&gt;😱觉醒&lt;/h2&gt;
+&lt;p&gt;直到我在b站看了马林思维的一系列视频。我似乎醒悟了，一下子想通了，有时候当你想通了再回头去看，你会发现以往的自己有多么可笑。&lt;br&gt;
+&lt;a href=&#34;https://www.bilibili.com/video/BV11b411f7pj/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=fc5a06e336163060ca5afcbf4e0cc828&#34;&gt;https://www.bilibili.com/video/BV11b411f7pj/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=fc5a06e336163060ca5afcbf4e0cc828&lt;/a&gt;&lt;br&gt;
+现在以我自己的理解来说我的收获，希望你能理解这件事的逻辑：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个人只有在有情绪时才会有行动：例如饿了就要吃、困了就想睡、色了就想奖励自己（在此情绪概指喜怒哀乐以及困饿饱胀等感受）&lt;/li&gt;
+&lt;li&gt;当一件事让你产生快乐时，你就会想要重复：例如你总想奖励自己&lt;/li&gt;
+&lt;li&gt;当一件事让你产生痛苦时，你就会想要逃避：例如你奖励多了，觉得奖励使自己身体不好喝营养快线都补不回来时，你就会想要戒色。也比如上个班要把自己累死了，所以你天天都不想上班。&lt;/li&gt;
+&lt;li&gt;如果你做一件事即痛苦又快乐，那么就要看哪种情绪占上峰，这决定了你能否坚持做这件事。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;逻辑很简单吧，那么回头思考下：&lt;br&gt;
+你为什么要戒色呢？答案是：你感受到了痛苦。&lt;br&gt;
+为什么戒不掉？答案是：它能带来大于痛苦的快乐。&lt;/p&gt;
+&lt;h2 id=&#34;思考&#34;&gt;❓思考&lt;/h2&gt;
+&lt;p&gt;在前面的章节中，我给戒色的症状章节名叫做误区，你是否能发现些什么？&lt;/p&gt;
+&lt;h3 id=&#34;分析一件事是否对你造成痛苦几乎所有人都会扩大范围好不容易找到一件事作为由头我们会不自觉的将自己的痛苦过分归咎于某个小因素&#34;&gt;分析一件事是否对你造成痛苦，几乎所有人都会扩大范围，好不容易找到一件事作为由头，我们会不自觉的将自己的痛苦过分归咎于某个小因素。&lt;/h3&gt;
+&lt;p&gt;回顾一下，你是否会在痛苦时，归咎你的痛苦源头为其他某人、其他外部因素等等，这本身在于，没有多少人会勇于承认自己的失败和无能。&lt;/p&gt;
+&lt;p&gt;奖励本身有这么大的危害吗？&lt;/p&gt;
+&lt;p&gt;是也不是，如果你的过量程度已经属于病态，这不属于正常讨论范畴，因为这很可能是精神和成瘾方面的问题。你也不能仅靠类似文章希望获得帮助，你需要的是求助专业的医生。&lt;/p&gt;
+&lt;p&gt;我们的讨论局限于给你造成一定困扰，但不到病态程度的奖励。&lt;/p&gt;
+&lt;p&gt;我有以下行为证明，单奖励这件事本身，危害远远不到我所认为的那么严重的程度：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;头皮屑：我购买了一种以往没使用过的洗发水，头皮屑没有了&lt;/li&gt;
+&lt;li&gt;口干舌燥：除了刚起床，其他时候多喝水这不是问题，我分析这和我睡觉张嘴呼吸以及喜欢盖得厚、盖得紧有关。&lt;/li&gt;
+&lt;li&gt;头昏眼花：鼻窦炎，颈椎病典型症状&lt;/li&gt;
+&lt;li&gt;鼻炎：小时候感冒不重视，长大不重视锻炼，抵抗力差&lt;/li&gt;
+&lt;li&gt;精力不充沛：睡眠时间不够，锻炼不够，缺乏热情&lt;/li&gt;
+&lt;li&gt;可能肾不好：西医肾功能检查无问题，中医表示除了火气大本身没啥问题&lt;/li&gt;
+&lt;li&gt;身体特差：从小身体也没多好，高中初中老在包夜上网，不好很正常&lt;/li&gt;
+&lt;li&gt;尿尿多：这点可能与奖励相关，但实在不是很大问题，偶尔会有炎症吃点药就能好&lt;/li&gt;
+&lt;li&gt;小蝌蚪质量可能不好：要不是还没开始备孕就结束备孕我真信了，儿子都6个月了&lt;/li&gt;
+&lt;li&gt;性格变内向：老实说和社会毒打、学校霸凌有关&lt;/li&gt;
+&lt;li&gt;懒惰：没有真正的勤快人，重点在于你做什么事，体验感如何&lt;/li&gt;
+&lt;li&gt;不自律：和懒惰这条一样&lt;/li&gt;
+&lt;li&gt;……..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;仔细分析后我发现，奖励本身是这么恐怖的事吗？能造成这么严重的后果吗？除了一条尿尿多可能正相关，况且这一条还和我奖励完立马尿尿有关，其他的问题要和奖励扯在一起未免太牵强。&lt;/p&gt;
+&lt;p&gt;此外，戒色成功与否和生活成功与否真的关系不大，戒了色人生能走向成功吗？要戒到何种程度？如果戒色失败人生就失败，戒色成功人生就成功，那太监岂不是最成功的人？&lt;/p&gt;
+&lt;h3 id=&#34;借用走向光明中的话来说戒色是系统任务&#34;&gt;借用《走向光明》中的话来说，戒色是系统任务&lt;/h3&gt;
+&lt;p&gt;如果你的生活陷入痛苦，身体出现问题，往往是系统性的问题。而不会是单一因素，单拧出奖励一件事，不是解决问题的态度。&lt;/p&gt;
+&lt;p&gt;举例来说：你可能晚睡早起睡眠不足、长期久坐缺乏运动、外卖不断饮食不健康、缺乏规划生活散漫、没有找到自己热爱的东西缺乏热情等等种种因素，正是这些综合因素促成你的痛苦，而奖励本身可能只是其中微小的因素。&lt;/p&gt;
+&lt;h3 id=&#34;借用马老师视频里的一句话如果你感受到痛苦想要戒色不妨开源节流&#34;&gt;借用马老师视频里的一句话，如果你感受到痛苦，想要戒色，不妨开源节流。&lt;/h3&gt;
+&lt;h2 id=&#34;开源节流&#34;&gt;开源节流&lt;/h2&gt;
+&lt;p&gt;很熟悉的词语吧，一般用于理财。某种意义上，你的身体也很适合这个词语。&lt;/p&gt;
+&lt;p&gt;简单来说，如果把身体健康比做你的资金，那么奖励、熬夜、暴饮暴食、慢性疾病等就是支出，而有病看病、没病养生、锻炼身体、平复心态就是收入。&lt;/p&gt;
+&lt;p&gt;收入和支出的平衡，就好比水池接水的同时放水的问题，如果想要调整好自己的身体，你需要找到真正漏水的洞，同时想办法开源引水。&lt;/p&gt;
+&lt;h3 id=&#34;如果奖励确实成了你的问题真正有效戒除方法不是每日记录打卡将你的目标定在多少天或是永久不奖励自己&#34;&gt;如果奖励确实成了你的问题，真正有效戒除方法，不是每日记录打卡，将你的目标定在多少天或是永久不奖励自己。&lt;/h3&gt;
+&lt;h3 id=&#34;而是做好心态建设告诉自己奖励自己很正常不是什么大不了的事情你不会因为某一次奖励了自己就立马挂掉同时不要执着于戒除奖励这件事情&#34;&gt;而是做好心态建设，告诉自己奖励自己很正常不是什么大不了的事情，你不会因为某一次奖励了自己就立马挂掉，同时不要执着于戒除奖励这件事情。&lt;/h3&gt;
+&lt;h3 id=&#34;生活很丰富你有无数可能真觉得身体有问题你应当先看医生&#34;&gt;生活很丰富，你有无数可能，真觉得身体有问题你应当先看医生&lt;/h3&gt;
+&lt;h3 id=&#34;无聊了你可以寻找新的爱好&#34;&gt;无聊了你可以寻找新的爱好&lt;/h3&gt;
+&lt;h3 id=&#34;孤独了可以拓展自己的社交圈子&#34;&gt;孤独了可以拓展自己的社交圈子&lt;/h3&gt;
+&lt;h3 id=&#34;那怕是静下心好好玩玩游戏寻找点儿生活乐趣也比死盯着这件事靠谱得多&#34;&gt;那怕是静下心好好玩玩游戏，寻找点儿生活乐趣，也比死盯着这件事靠谱得多。&lt;/h3&gt;
+&lt;p&gt;不要太执拗，洒脱一点&lt;/p&gt;
+&lt;h2 id=&#34;不要想一头大象&#34;&gt;不要想一头大象&lt;/h2&gt;
+&lt;p&gt;你还是会想大象，不想大象🐘的办法，就是想一群狮子，狮子🦁赶跑了大象，自然你就忘记了大象。&lt;/p&gt;
+">谈谈戒色</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
+
+
+  <script src="/media/js/cool.js"></script>
+
+
+
+  <div class="snow-container"></div>
+  <script color="0,205,205" pointer-events="auto" zIndex="-1" opacity='0.7' count="99" src="/media/js/bg/canvas-nest.js"></script>
+
+
+</html>
